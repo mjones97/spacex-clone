@@ -1,0 +1,186 @@
+.navbar-custom {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    transition: top 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.navbar-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.logo {
+    position: absolute;
+    top: 32px;
+    left: 50px;
+    width: 210px;
+    height: auto;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 38px;
+    left: 285px;
+    height: 30px;
+}
+
+.logo img {
+    width: 210px;
+    height: auto;
+}
+
+.nav-link {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.nav-link:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.navigation-right {
+    position: absolute;
+    top: 38px;
+    right: -116px;
+    height: 30px;
+}
+
+.mobile-menu-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-custom.scrolled {
+    background-color: black;
+    color: #FFF;
+}
+
+.scrolling-up {
+    background-color: black !important;
+}
+
+.at-top {
+    background-color: transparent !important;
+}
+
+.navbar-custom.at-top {
+    top: 0;
+}
+
+.navbar-custom.scrolled {
+    top: -100px;
+}
+
+.mobile-menu-icon, .close-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-icon {
+    position: absolute;
+    top: 42px;
+    right: 44px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    z-index: 1050;
+    padding: 14px 50px;
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.mobile-nav {
+    margin-top: 70px;
+}
+
+.mobile-nav .nav-link {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: right;
+    margin: 0 0 8px 0;
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid #51515178;
+}
+
+.mobile-nav .nav-link:hover {
+    color: #AAA;
+}
+
+.main-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1480px) {
+    .navigation-right {
+        right: 0px;
+    }
+
+    .close-icon {
+        position: absolute;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navigation {
+        display: none !important;
+    }
+
+    .desktop-menu {
+        display: none !important;
+    }
+
+    .main-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+        text-align: right;
+        padding: 20px 50px;
+    }
+
+    .close-icon {
+        position: absolute;
+        right: 44px;
+    }
+
+    .navigation-mobile {
+        display: block !important;
+    }
+
+    .mobile-nav .nav-link:hover {
+        color: #AAA;
+        text-decoration: none;
+    }
+
+    .shop {
+        display: none;
+    }
+}

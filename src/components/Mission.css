@@ -1,0 +1,30 @@
+.mission {
+    width: 100%;
+    height: 101vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.mission-text {
+    position: relative;
+    width: 500px;
+    padding-top: 650px;
+}
+
+.mission-btn {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    border-radius: 0px;
+    min-width: 160px;
+    margin: 30px 0;
+    padding: 14px 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.mission-btn:hover {
+    background-color: #FFF;
+    font-weight: bold;
+    color: #000;
+}
