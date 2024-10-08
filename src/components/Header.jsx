@@ -13,8 +13,6 @@ const Header = () => {
         
         if (shop) {
             shop.style.display = "none";
-        } else {
-            console.error('Element with class "shop" not found.');
         }
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };

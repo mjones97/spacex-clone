@@ -8,6 +8,7 @@ const Mission = ({ backgroundImage, description, title, buttonText }) => {
 
     return (
         <div className="mission" style={missionStyle}>
+            <div className="overlay"></div>
             <div className="container">
                 <div className="mission-text">
                     <p className="mb-1">{description}</p>
